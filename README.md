@@ -24,3 +24,27 @@ git clone <repository-url>
 cd task-tracker-cli
 npm install  # If needed
 ```
+
+## Usage
+# Adding a new task
+```sh
+node index.js add "Buy groceries"
+# Output: Task added successfully (ID: 1)
+```
+# Updating and deleting tasks
+```sh
+node index.js update 1 "Buy groceries and cook dinner"
+node index.js delete 1
+```
+# Marking a task as in progress or done
+```sh
+node index.js mark-in-progress 1
+node index.js mark-done 1
+```
+# Listing tasks
+```
+node index.js list       # Lists all tasks
+node index.js list done  # Lists completed tasks
+node index.js list todo  # Lists pending tasks
+node index.js list in-progress  # Lists ongoing tasks
+```
