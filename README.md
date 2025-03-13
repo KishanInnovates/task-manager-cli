@@ -26,6 +26,7 @@ npm install  # If needed
 ```
 
 ## Usage
+
 # Adding a new task
 ```sh
 node index.js add "Buy groceries"
